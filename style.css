@@ -1,15 +1,7 @@
-.wrapper {
-    /*   border: 1px solid #000;*/
-   }
-   .form{
-       float: left;
-       margin-right: 2em;
-   }
-   .info table {
+   .table, .table th, .table td {
        border: 1px solid #000;
        border-collapse: collapse;
-   } 
-   .info table th {
-       border: 1px solid #000;
+   }
+   th, td {
        width: 150px;
    }

@@ -11,6 +11,8 @@ window.onload = function () {
  var rubSale = 0;
  var btcBuy = 0;
  var btcSale = 0;
+var table = document.getElementsByClassName('kurs');
+
 
 function Request(url, callback) {
     var xhr = new XMLHttpRequest();
@@ -29,6 +31,7 @@ function Request(url, callback) {
 function test(data){
     usdBuy = data[0].buy;
     console.log(usdBuy);
+    table[0].firstElementChild.firstElementChild.lastElementChild.textContent = usdBuy
     usdSale = data[0].sale;
     console.log(usdSale); 
     eurBuy = data[1].buy;
